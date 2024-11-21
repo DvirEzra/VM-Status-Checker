@@ -46,7 +46,7 @@ This script moves VMs from their current location to a designated cluster and da
 
 2. **Prepare the VM List**
 
-   For each script that requires a list of VMs (`CheckVMStatus.ps1`, `PowerOffVMs.ps1`, `MoveVMToCluster.ps1`), create a text file named `CheckVmList.txt` in the relevant folder. Add the VM names, one per line:
+   For each script that requires a list of VMs (`CheckVMStatus.ps1`, `PowerOffVM.ps1`, `MoveVMToCluster.ps1`), create a text file named `CheckVmList.txt` in the relevant folder. Add the VM names, one per line:
 
    ```
    VM1
@@ -66,7 +66,7 @@ This script moves VMs from their current location to a designated cluster and da
 
    ```powershell
    .\CheckVMStatus\CheckVMStatus.ps1
-   .\PowerOffVMs\PowerOffVMs.ps1
+   .\PowerOffVMs\PowerOffVM.ps1
    .\MoveVMToCluster\MoveVMToCluster.ps1
    ```
 
@@ -83,7 +83,7 @@ This script moves VMs from their current location to a designated cluster and da
    VM VM3 is Deleted (not found)
    ```
 
-- **`PowerOffVMs.ps1`**:
+- **`PowerOffVM.ps1`**:
    ```plaintext
    Stopping VM: VM1
    Waiting for VM1 to shut down...
